@@ -2,3 +2,11 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --background-color: #000028;
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
+  --subtitle-color: #000028;
+  --button_width: 70px;
+  --button_height: 26px;
+}
