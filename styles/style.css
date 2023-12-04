@@ -165,7 +165,8 @@
 
 .reasons {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 315px 315px 315px;
+  justify-content: center;
   margin-block-start: 80px;
   row-gap: 20px;
 }
@@ -218,6 +219,46 @@
 
 .block__title {
   font-weight: 400;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-block-start: 80px;
+}
+
+.gallery__images {
+  display: grid;
+  grid-template-columns: 315px 315px 315px;
+  grid-template-rows: 315px 315px 315px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery__image {
+  width: 100%;
+  height: 100%;
+}
+
+.image-sunset {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.image-ice-cream {
+  grid-area: 1 / 3 / 3 / 3;
+}
+
+.image-tape {
+  grid-area: 2 / 1 / 4 / 2;
+}
+
+.image-books {
+  grid-area: 2 / 2 / 2 / 3;
+}
+
+.image-street {
+  grid-area: 3 / 2 / 3 / 4;
 }
 
 .footer__title {
