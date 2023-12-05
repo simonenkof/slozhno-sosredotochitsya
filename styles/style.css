@@ -85,11 +85,21 @@
 .header__theme-menu-button {
   border: none;
   padding: 0 13px;
+  border: 1px solid transparent;
   color: var(--accent-color);
   font-family: "IBM Plex mono", sans-serif;
   font-size: 1rem;
   text-transform: lowercase;
   background: transparent;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--button-hover-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  text-decoration: underline;
 }
 
 .header__theme-menu-button_active {
@@ -175,6 +185,14 @@
   display: inline-block;
   text-decoration: none;
   text-shadow: 3px 2px var(--accent-color);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:focus {
+  border: 1px solid var(--main-text-color);
 }
 
 .reasons {
