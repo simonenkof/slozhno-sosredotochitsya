@@ -138,7 +138,7 @@
   display: flex;
   flex-direction: column;
   gap: 80px;
-  margin-block-start: 55px;
+  margin-block-start: 60px;
   padding: 0 20px;
 }
 
@@ -389,10 +389,6 @@
     margin-block-end: 16%;
   }
 
-  .main {
-    margin-block-start: 60px;
-  }
-
   .introduction__text-container {
     margin-inline-start: 7px;
   }
@@ -410,7 +406,7 @@
   }
 
   .solution__text {
-    margin-inline-start: 10px;
+    margin-inline-start: 7px;
   }
 
   .gallery__images {
