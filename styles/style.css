@@ -18,11 +18,35 @@
   min-height: 768px;
 }
 
+.header::before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+  width: 25px;
+  height: 25px;
+  left: 97.6%;
+  top: 0%;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
+  width: 25px;
+  height: 25px;
+  left: 0%;
+  top: 97%;
+}
+
 .header__decoration {
   position: absolute;
   inset: 0;
-  left: 90.6%;
-  top: 2.6%;
+  left: 93.7%;
+  top: 0.5%;
   color: var(--accent-color);
   font-family: "IBM Plex mono", sans-serif;
   font-size: 1rem;
@@ -40,20 +64,8 @@
   border-radius: 50%;
   width: 9px;
   height: 9px;
-  left: 64.4%;
-  top: 1%;
-}
-
-.header__decoration::after {
-  content: "";
-  position: absolute;
-  display: block;
-  border-block-start: 1px solid var(--accent-color);
-  border-inline-end: 1px solid var(--accent-color);
-  width: 25px;
-  height: 25px;
-  left: 55%;
-  top: 0%;
+  left: 74%;
+  top: 0.5%;
 }
 
 .header__theme-menu {
@@ -107,18 +119,6 @@
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
-}
-
-.header::after {
-  content: "";
-  position: absolute;
-  display: block;
-  border-block-end: 1px solid var(--accent-color);
-  border-inline-start: 1px solid var(--accent-color);
-  width: 25px;
-  height: 25px;
-  left: 2%;
-  top: 94.3%;
 }
 
 .title-decor {
@@ -259,6 +259,39 @@
 
 .image-street {
   grid-area: 3 / 2 / 3 / 4;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 80px;
+  height: 100vh;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+  width: 25px;
+  height: 25px;
+  left: 97.6%;
+  top: 0%;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
+  width: 25px;
+  height: 25px;
+  left: 0%;
+  top: 94.3%;
 }
 
 .footer__title {
