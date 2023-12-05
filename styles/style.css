@@ -3,6 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background: var(--background-color);
+  background-attachment: fixed;
 }
 
 .header {
@@ -14,7 +15,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   height: 100vh;
   padding: 20px;
   min-height: 768px;
@@ -106,17 +106,12 @@
   line-height: 82.5%;
 }
 
-.header__title-symbol {
-  display: inline-block;
-}
-
 .header__text {
   grid-area: 3 / 4 / 3 / -1;
   align-self: center;
   block-size: fit-content;
   color: var(--subtitle-color);
   font-family: "IBM Plex mono", sans-serif;
-  font-size: 1rem;
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
@@ -141,7 +136,7 @@
 .title-accent {
   color: var(--accent-color);
   font-family: "IBM Plex mono", sans-serif;
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 700;
   line-height: 130%;
 }
@@ -160,7 +155,7 @@
 .subtitle-accent {
   color: var(--subtitle-color);
   font-family: "IBM Plex mono", sans-serif;
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 700;
   line-height: 130%;
 }
@@ -219,10 +214,6 @@
 
 .solution__block:not(.solution__block:nth-child(2)) {
   margin-block-start: 20px;
-}
-
-.block__title {
-  font-weight: 400;
 }
 
 .gallery {
