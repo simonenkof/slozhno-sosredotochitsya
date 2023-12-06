@@ -13,7 +13,7 @@
   height: 100vh;
   padding: 20px;
   padding-left: 0;
-  background-image: url(../images/cover-image-dark.png);
+  background-image: var(--header-image);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -54,12 +54,13 @@
   font-size: 1em;
   font-style: normal;
   line-height: 25px;
+  max-block-size: 26px;
 }
 
 .header__decoration::before {
   content: "";
   position: absolute;
-  top: 1.1%;
+  top: 30%;
   left: 54%;
   display: block;
   width: 9px;
@@ -271,9 +272,9 @@
 }
 
 .gallery__image {
-  object-fit: cover;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .image-sunset {
@@ -357,11 +358,6 @@
   .header__decoration {
     top: 2%;
     left: 89.4%;
-  }
-
-  .header__decoration::before {
-    top: 0.9%;
-    left: 52%;
   }
 
   .header__theme-menu {
@@ -451,11 +447,6 @@
     left: 81%;
   }
 
-  .header__decoration::before {
-    top: 1.2%;
-    left: 60%;
-  }
-
   .header__theme-menu {
     grid-area: 1 / 3 / 1 / 3;
     justify-self: end;
@@ -470,10 +461,10 @@
   .header__title {
     grid-area: 2 / 1 / 2 / -1;
     align-self: start;
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     margin-inline-start: 2.5%;
     margin-block-start: 2%;
     margin-block-end: 0;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .header__text {
@@ -484,9 +475,9 @@
   }
 
   .main {
-    padding: 0 10px;
-    margin-block-start: 40px;
     gap: 50px;
+    margin-block-start: 40px;
+    padding: 0 10px;
   }
 
   .introduction {
