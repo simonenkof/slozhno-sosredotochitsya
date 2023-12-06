@@ -437,23 +437,23 @@
   }
 
   .header::before {
-    top: 2%;
-    left: 94%;
+    top: 1.5%;
+    left: 90.7%;
   }
 
   .header::after {
-    top: 95.5%;
+    top: 94.8%;
     left: 2.6%;
   }
 
   .header__decoration {
-    top: 2%;
-    left: 89.4%;
+    top: 1.5%;
+    left: 81%;
   }
 
   .header__decoration::before {
-    top: 0.9%;
-    left: 52%;
+    top: 1.2%;
+    left: 60%;
   }
 
   .header__theme-menu {
@@ -519,5 +519,15 @@
 
   .footer {
     margin-block-start: 40px;
+  }
+
+  .footer::before {
+    top: 1.5%;
+    left: 91%;
+  }
+
+  .footer::after {
+    top: 94.7%;
+    left: 2.6%;
   }
 }
