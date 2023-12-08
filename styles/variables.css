@@ -4,10 +4,14 @@
 */
 :root {
   --background-color: #000028;
+  --frames-color: #ff0070;
   --header-image: url("../images/cover-image-dark.png");
   --accent-color: #ff0070;
   --title-color: #db00ff;
+  --title-shadow-color: #ff0070;
   --subtitle-color: #000028;
   --main-text-color: #f1b2ce;
+  --button-color: #ff0070;
   --button-hover-color: rgba(255, 0, 112, 0.4);
+  --font-family: "IBM Plex mono";
 }

@@ -10,11 +10,14 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --background-color: #fff1f7;
+  --frames-color: #353430;
   --header-image: url("../images/cover-image-light.png");
   --accent-color: #ff8dcb;
   --title-color: #ffc2e6;
+  --title-shadow-color: #ff0070;
   --subtitle-color: #353430;
   --main-text-color: #353430;
+  --button-color: #353430;
   --button-hover-color: rgba(50, 49, 45, 0.4);
 }
 
@@ -26,11 +29,18 @@
   :root {
     /* Дублируем переменные светлой темы */
     --background-color: #fff1f7;
+    --frames-color: #353430;
     --header-image: url("../images/cover-image-light.png");
     --accent-color: #ff8dcb;
     --title-color: #ffc2e6;
+    --title-shadow-color: #ff0070;
     --subtitle-color: #353430;
     --main-text-color: #353430;
+    --button-color: #353430;
     --button-hover-color: rgba(50, 49, 45, 0.4);
+  }
+
+  .header__decoration {
+    display: none;
   }
 }
