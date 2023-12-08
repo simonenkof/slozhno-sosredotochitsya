@@ -52,8 +52,8 @@
   font-weight: 400;
   font-size: 1em;
   font-style: normal;
-  text-transform: uppercase;
   line-height: 138.889%;
+  text-transform: uppercase;
   max-block-size: 26px;
 }
 
@@ -184,19 +184,19 @@
 
 .link {
   position: relative;
-  display: inline-block;
-  text-decoration: none;
-  color: var(--main-text-color);
   z-index: 1;
+  display: inline-block;
+  color: var(--main-text-color);
+  text-decoration: none;
 }
 
 .link::after {
   content: attr(link-data);
   position: absolute;
-  left: 2px;
   top: 2px; 
-  color: var(--accent-color);
+  left: 2px;
   z-index: -1;
+  color: var(--accent-color);
 }
 
 .link:hover {
@@ -204,8 +204,8 @@
 }
 
 .link:focus-visible {
-  outline: none;
   border: 1px solid var(--main-text-color);
+  outline: none;
 }
 
 .reasons {
