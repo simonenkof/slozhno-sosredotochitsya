@@ -85,11 +85,11 @@
 }
 
 .header__theme-menu-button {
+  position: relative;
   border: none;
   padding: 0 13px;
   color: var(--button-color);
   font-family: var(--font-family), monospace;
-  font-size: 1rem;
   text-transform: lowercase;
   background: transparent;
   cursor: pointer;
@@ -101,7 +101,7 @@
 
 .header__theme-menu-button:focus-visible {
   outline: none;
-  text-decoration: underline;
+  border-block-end: 1px solid var(--button-color);
 }
 
 .header__theme-menu-button_active {
@@ -191,12 +191,19 @@
 }
 
 .link::after {
-  content: attr(link-data);
   position: absolute;
-  top: 2px; 
+  top: 2px;
   left: 2px;
   z-index: -1;
   color: var(--accent-color);
+}
+
+.introduction__text-container .link::after {
+  content: "выяснили";
+}
+
+.solution__block .link::after {
+  content: "показал";
 }
 
 .link:hover {
@@ -364,6 +371,10 @@
     --title-shadow-color: #ff8dcb;
   }
 
+  .page.theme_auto .header__title {
+    --title-shadow-color: #ff8dcb;
+  }
+
   .header__text {
     grid-area: 3 / 2 / 3 / -1;
     align-self: center;
@@ -401,8 +412,12 @@
   .footer {
     margin-block-start: 60px;
   }
-  
+
   .page.theme_light .footer__title {
+    --title-shadow-color: #ff8dcb;
+  }
+
+  .page.theme_auto .footer__title {
     --title-shadow-color: #ff8dcb;
   }
 }
@@ -414,15 +429,15 @@
     padding-left: 0;
   }
 
-.frames::before {
-  top: 10px;
-  right: 10px;
-}
+  .frames::before {
+    top: 10px;
+    right: 10px;
+  }
 
-.frames::after {
-  bottom: 10px;
-  left: 10px;
-}
+  .frames::after {
+    bottom: 10px;
+    left: 10px;
+  }
 
   .header__decoration {
     top: 1.5%;
@@ -450,6 +465,10 @@
   }
 
   .page.theme_light .header__title {
+    --title-shadow-color: #ff8dcb;
+  }
+
+  .page.theme_auto .header__title {
     --title-shadow-color: #ff8dcb;
   }
 
@@ -503,6 +522,10 @@
   }
 
   .page.theme_light .footer__title {
+    --title-shadow-color: #ff8dcb;
+  }
+
+  .page.theme_auto .footer__title {
     --title-shadow-color: #ff8dcb;
   }
 }
